@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 3.15)
+project(KV_STORE)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-unused-function")
+add_subdirectory(src)
+add_subdirectory(test)
+add_subdirectory(lib/googletest)
+add_subdirectory(lib/leveldb)
